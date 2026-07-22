@@ -1,22 +1,22 @@
-﻿# מזג האוויר בישראל
+﻿# Israel Weather
 
-אתר React + TypeScript (Vite) להצגת מזג אוויר נוכחי לפי יישוב בישראל.
+React + TypeScript (Vite) app displaying current weather by locality in Israel.
 
-## הפעלה מקומית
+## Local setup
 
 ```
 npm install
 npm run dev
 ```
 
-## מבנה הפרויקט
+## Project structure
 
 ```
 src/
   components/       # header + navigation
   pages/            # home / history / about
-  services/         # קריאות ל-API (יישובים, מזג אוויר)
-  types/            # טיפוסי TypeScript
-  utils/            # שמירת היסטוריה ב-localStorage
-  config.ts         # מפתח ה-API
+  services/         # API calls (localities, weather)
+  types/            # TypeScript types
+  utils/            # localStorage history persistence
+  config.ts         # API key
 ```
