@@ -1,0 +1,211 @@
+.iconWrapper {
+  width: 92px;
+  height: 92px;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Sun */
+.sunCore {
+  fill: var(--color-sun-gold);
+}
+
+.sunRays {
+  transform-origin: 42px 38px;
+  animation: spin 16s linear infinite;
+}
+
+.sunRay {
+  stroke: var(--color-sun-gold);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Moon */
+.moon {
+  fill: #cdd8e0;
+}
+
+/* Cloud */
+.cloudGroup {
+  animation: cloudDrift 6s ease-in-out infinite;
+}
+
+.cloudPart,
+.cloudBase {
+  fill: #f4f6f8;
+  stroke: #c7d0d6;
+  stroke-width: 1;
+}
+
+@keyframes cloudDrift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+/* Fog */
+.fogGroup {
+  animation: fogPulse 4s ease-in-out infinite;
+}
+
+.fogLine {
+  stroke: #c7d0d6;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+@keyframes fogPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateX(-2px);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(2px);
+  }
+}
+
+/* Rain */
+.raindrop {
+  stroke: var(--color-sky-mid);
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: fall 1s linear infinite;
+}
+
+.raindropDelay1 {
+  animation-delay: 0.3s;
+}
+
+.raindropDelay2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
+/* Snow */
+.snowflake {
+  fill: #d7e3ea;
+  animation: drift 2.2s ease-in-out infinite;
+}
+
+.snowflakeDelay1 {
+  animation-delay: 0.7s;
+}
+
+.snowflakeDelay2 {
+  animation-delay: 1.4s;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, -4px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(4px, 6px);
+  }
+  100% {
+    transform: translate(-2px, 14px);
+    opacity: 0;
+  }
+}
+
+/* Thunder */
+.thunderbolt {
+  fill: var(--color-sun-gold);
+  animation: flash 1.6s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0%,
+  38%,
+  42%,
+  100% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+}
+
+/* Wind — speed reflects the real measured wind speed via tier classes */
+.windLine {
+  stroke: var(--color-sky-mid);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.windGroup {
+  opacity: 0.7;
+}
+
+.windCalm .windLine {
+  animation: windBlow 5s ease-in-out infinite;
+  opacity: 0.35;
+}
+
+.windBreeze .windLine {
+  animation: windBlow 2.6s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.windWindy .windLine {
+  animation: windBlow 1.4s ease-in-out infinite;
+  opacity: 0.85;
+}
+
+.windGale .windLine {
+  animation: windBlow 0.7s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes windBlow {
+  0% {
+    transform: translateX(-4px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(6px);
+    opacity: 0;
+  }
+}

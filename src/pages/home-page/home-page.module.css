@@ -1,0 +1,100 @@
+.searchSection {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.statusText {
+  margin-top: 20px;
+  color: var(--color-ink-soft);
+  font-family: var(--font-display);
+}
+
+.errorText {
+  margin-top: 10px;
+  color: var(--color-clay);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Weather result card: deliberately different background from the
+   white search card above, tinted by the temperature accent tier. */
+.weatherCard {
+  margin-top: 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 28px;
+  border-top: 6px solid var(--accent-color);
+  background: linear-gradient(160deg, var(--accent-bg-start) 0%, var(--accent-bg-end) 100%);
+}
+
+.accentCold {
+  --accent-color: var(--color-sky-deep);
+  --accent-bg-start: #e4eef4;
+  --accent-bg-end: #d3e4ec;
+}
+
+.accentMild {
+  --accent-color: var(--color-sky-mid);
+  --accent-bg-start: #e8f2f2;
+  --accent-bg-end: #d6e9e9;
+}
+
+.accentWarm {
+  --accent-color: var(--color-sun-gold);
+  --accent-bg-start: #fdf1de;
+  --accent-bg-end: #fae4bd;
+}
+
+.accentHot {
+  --accent-color: var(--color-clay);
+  --accent-bg-start: #fbe6db;
+  --accent-bg-end: #f6cdb8;
+}
+
+.weatherHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.weatherCity {
+  font-size: 1.5rem;
+}
+
+.weatherCountry {
+  color: var(--color-ink-soft);
+  margin-top: 4px;
+}
+
+.weatherRegion {
+  color: var(--color-ink-soft);
+  margin-top: 2px;
+  font-size: 0.9rem;
+}
+
+.weatherTemperature {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 10px 0 0;
+  color: var(--accent-color);
+}
+
+.weatherCondition {
+  font-size: 1.1rem;
+  color: var(--color-ink-soft);
+  margin-top: 4px;
+}
+
+.weatherWind {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: var(--color-ink-soft);
+}

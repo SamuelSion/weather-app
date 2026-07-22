@@ -1,0 +1,68 @@
+:root {
+  --color-sand: #f7f1e6;
+  --color-sand-deep: #efe4cf;
+  --color-sky-deep: #1b4b66;
+  --color-sky-mid: #3e7c9a;
+  --color-sun-gold: #e8a33d;
+  --color-clay: #c1592b;
+  --color-ink: #22303a;
+  --color-ink-soft: #4c5b64;
+  --color-white: #ffffff;
+
+  --font-display: "Rubik", "Segoe UI", sans-serif;
+  --font-body: "Assistant", "Segoe UI", sans-serif;
+
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-card: 0 10px 30px rgba(27, 75, 102, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  direction: ltr;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--color-sky-deep);
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 40px;
+  flex: 1;
+}

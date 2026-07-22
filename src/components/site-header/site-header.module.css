@@ -1,0 +1,39 @@
+.header {
+  background: var(--color-sky-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.skyStrip {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-sky-deep) 0%,
+    var(--color-sky-mid) 35%,
+    var(--color-sun-gold) 75%,
+    var(--color-clay) 100%
+  );
+}
+
+.headerContent {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 36px 20px 30px;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--color-sand);
+  font-family: var(--font-body);
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
