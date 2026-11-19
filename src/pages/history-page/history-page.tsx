@@ -12,7 +12,7 @@ export function HistoryPage() {
   }, []);
 
   return (
-    <div className="page-container">
+    <main className="page-container">
       <h2 className={styles.title}>Search History</h2>
 
       {historyEntries.length === 0 ? (
@@ -37,6 +37,6 @@ export function HistoryPage() {
           </tbody>
         </table>
       )}
-    </div>
+    </main>
   );
 }

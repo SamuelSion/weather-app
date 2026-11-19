@@ -93,7 +93,7 @@ export function HomePage() {
     : null;
 
   return (
-    <div className="page-container">
+    <main className="page-container">
       <section className={styles.searchSection}>
         <h2 className={styles.sectionTitle}>Find the weather</h2>
 
@@ -132,6 +132,6 @@ export function HomePage() {
           <p className={styles.weatherWind}>Wind speed: {currentWeather.windSpeedKph} kph</p>
         </section>
       )}
-    </div>
+    </main>
   );
 }

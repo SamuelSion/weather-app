@@ -149,10 +149,7 @@ export function WeatherIcon({ conditionText, isDay, windSpeedKph }: WeatherIconP
         )}
 
         {conditionKind === "thunder" && (
-          <path
-            className={styles.thunderbolt}
-            d="M56 78 L44 96 L52 96 L46 112 L64 90 L55 90 Z"
-          />
+          <path className={styles.thunderbolt} d="M58 76 L48 90 L54 90 L44 98 L60 84 L52 84 Z" />
         )}
 
         <g className={`${styles.windGroup} ${windTierClass}`}>

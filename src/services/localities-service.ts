@@ -1,12 +1,12 @@
 import type { Locality, LocalitiesApiResponse } from "../types/locality";
-
-// The government open-data resource that holds all Israeli localities.
-const LOCALITIES_RESOURCE_ID = "8f714b6f-c35c-4b40-a0e7-547b675eee0e";
+import { AppConfig } from "../config";
 
 const LOCALITIES_API_URL =
-  "https://data.gov.il/api/3/action/datastore_search?resource_id=" +
-  LOCALITIES_RESOURCE_ID +
-  "&limit=1500";
+  AppConfig.LOCALITIES_API_BASE_URL +
+  "?resource_id=" +
+  AppConfig.LOCALITIES_RESOURCE_ID +
+  "&limit=" +
+  AppConfig.LOCALITIES_FETCH_LIMIT;
 
 // Fetches every Israeli locality (Hebrew + English name pairs).
 export async function fetchLocalities(): Promise<Locality[]> {

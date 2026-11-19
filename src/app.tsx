@@ -5,6 +5,7 @@ import { SiteFooter } from "./components/site-footer/site-footer";
 import { HomePage } from "./pages/home-page/home-page";
 import { HistoryPage } from "./pages/history-page/history-page";
 import { AboutPage } from "./pages/about-page/about-page";
+import { NotFoundPage } from "./pages/not-found-page/not-found-page";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <SiteFooter />
     </>

@@ -2,7 +2,7 @@ import styles from "./about-page.module.css";
 
 export function AboutPage() {
   return (
-    <div className="page-container">
+    <main className="page-container">
       <h2 className={styles.title}>About This Site</h2>
 
       <section className={styles.card}>
@@ -41,15 +41,15 @@ export function AboutPage() {
           <br />
           GitHub:{" "}
           <a
-            href="https://github.com/samuel-sion"
+            href="https://github.com/SamuelSion"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
-            samuel-sion
+            SamuelSion
           </a>
         </p>
       </section>
-    </div>
+    </main>
   );
 }

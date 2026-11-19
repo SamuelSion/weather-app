@@ -15,7 +15,7 @@ const MAX_FILTERED_SUGGESTIONS = 12;
 
 // Strips punctuation marks that commonly vary between spellings of the same
 // name (Hebrew geresh/gershayim, plain quotes) and collapses whitespace,
-// so "Majdal Shams" typed by hand still matches the list even with small
+// so "בוקעאתא" typed by hand still matches the list even with small
 // punctuation differences.
 function normalizeForMatch(value: string): string {
   return value

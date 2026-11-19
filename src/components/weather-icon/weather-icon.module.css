@@ -37,7 +37,9 @@
 
 /* Moon */
 .moon {
-  fill: #cdd8e0;
+  fill: #9fb1bd;
+  stroke: #7c909d;
+  stroke-width: 0.5;
 }
 
 /* Cloud */
@@ -47,9 +49,9 @@
 
 .cloudPart,
 .cloudBase {
-  fill: #f4f6f8;
-  stroke: #c7d0d6;
-  stroke-width: 1;
+  fill: #eef1f3;
+  stroke: #8a97a0;
+  stroke-width: 1.5;
 }
 
 @keyframes cloudDrift {
@@ -68,7 +70,7 @@
 }
 
 .fogLine {
-  stroke: #c7d0d6;
+  stroke: #8a97a0;
   stroke-width: 4;
   stroke-linecap: round;
 }
